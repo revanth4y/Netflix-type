@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html.dark,
+  html:not(.light) {
+    @apply bg-[#141414] text-gray-100;
+  }
+  html.light {
+    @apply bg-gray-100 text-gray-900;
+  }
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Custom scrollbar for horizontal rows */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Modal fade-in */
+@keyframes trailer-modal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-trailer-fade {
+  animation: trailer-modal-fade 0.2s ease-out forwards;
+}
