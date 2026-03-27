@@ -2,6 +2,7 @@
 
 A production-ready Netflix-style frontend built with React, Vite, and Tailwind CSS. Uses the OMDb API for movie data and simulates authentication via LocalStorage.
 
+
 ## Tech Stack
 
 - **React 18** + **Vite**
